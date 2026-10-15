@@ -26,14 +26,15 @@ for t in my_turtles:
     t.penup()
     t.goto(startx, starty)
     t.setheading(direction)
+    t.pendown()
     t.right(45)
     t.forward(50)
-    t.pendown()
 
-# Change direction to the heading of last turtle
-direction = t.heading()
 
-#
+    # Change direction to the heading of last turtle
+    direction = t.heading()
+
+    #
     startx = t.xcor()
     starty = t.ycor()
 
