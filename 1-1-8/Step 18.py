@@ -58,6 +58,9 @@ for step in range(50):
 					vert_turtles.remove(vt)
 					ht.fillcolor("grey")
 					vt.fillcolor("grey")
+				for ht in range(100):
+					vt. += 5
+					ht. += 5
 
 
 wn = trtl.Screen()
