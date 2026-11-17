@@ -44,7 +44,7 @@ def update_score():
 
 def jerry_clicked(x,y):
     global timer, timer_up
-    if timer <= 0:
+    if timer_up == False:
         change_position()
         update_score()
     else:
@@ -74,5 +74,6 @@ def countdown():
 jerry.onclick(jerry_clicked)
 
 wn=trtl.Screen()
+wn.bgcolor("blue")
 wn.ontimer(countdown, counter_interval)
 wn.mainloop()
