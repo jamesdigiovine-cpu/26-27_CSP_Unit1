@@ -1,5 +1,6 @@
 # a121_catch_a_turtle.py
 #-----import statements-----
+import turtle
 import turtle as trtl
 import random as rand
 
@@ -9,6 +10,7 @@ jerry_size = 2
 jerry_shape = "turtle"
 score = 0
 font_setup = ("Arial", 20, "normal")
+list_color = ["red", "orange", "yellow", "blue"]
 
 #-----countdown variables-----
 timer = 5
@@ -58,6 +60,11 @@ def change_position():
     jerry.goto(new_xpos, new_ypos)
     jerry.pendown()
     jerry.showturtle()
+
+def change_color():
+    global list_color
+    new_color = rand.choice(list_color)
+    turtle.color(new_color)
 
 def countdown():
   global timer, timer_up
