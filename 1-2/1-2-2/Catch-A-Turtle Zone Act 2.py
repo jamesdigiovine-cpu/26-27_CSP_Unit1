@@ -19,7 +19,7 @@ counter_interval = 1000   #1000 represents 1 second
 timer_up = False
 
 #-----leaderboard variables-----
-leaderboard_file)name = "a122_leaderboard.txt"
+leaderboard_file_name = "a122_leaderboard.txt"
 player_name = input("What is Your Name?")
 
 
